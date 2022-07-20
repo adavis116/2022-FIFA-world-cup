@@ -242,6 +242,15 @@ hr {
     width: 50%;
 }
 
+.footer-social a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.fa-brands {
+    color: #FFFFFF;
+}
+
 /*------------------------------------
 ----------------index end---------- */
 
