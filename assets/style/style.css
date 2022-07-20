@@ -145,6 +145,32 @@ nav li a {
     margin-right: 40px;
 }
 
+.btn-tablet,
+.btn-tablet-2 {
+  width: 120px;
+  height: 40px;
+  background-color: #DD0000;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 12px;
+  margin: 30px -100px;
+  border-radius: 5px;
+  border: 0px;
+  justify-content: center;
+  display: none;
+}
+
+.btn-tablet a,
+.btn-tablet-2 a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.btn-tablet-2 {
+  margin-left: 300px;
+  margin-top: 10px;
+}
+
 /* ----
 Footer
 ------*/
@@ -268,7 +294,7 @@ hr {
 /*------------------------
 -------- animation------ */
 
-.watch-live {
+/* .watch-live {
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
@@ -292,5 +318,180 @@ hr {
     40%,
     60% {
       transform: translate3d(4px, 0, 0);
+    }
+  } */
+
+/*-------------------------------
+----- media queries start------ */
+
+/*Tablet */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+
+    .btn-tablet,
+    .btn-tablet-2 {
+      display: flex;
+    }
+  
+    body {
+      margin-left: 120px;
+    }
+  
+    .banner-container {
+      padding-bottom: 150px;
+      width: 20%;
+    }
+  
+    header {
+      margin: 0px -110px;
+      padding: 0px 100px;
+      width: 100%;
+    }
+  
+    .content {
+      display: block;
+      margin: 0px 25px;
+    }
+  
+    nav>ul {
+      height: 100%;
+      background-color: #FFFFFF;
+      display: flex;
+      padding: 10px 10px;
+      justify-content: center;
+      justify-items: end;
+      margin: 2px 200px;
+    }
+  
+    .nav-btn {
+      width: 200px;
+      margin: 0px;
+      margin-left: 30px;
+      border: 1px solid;
+      text-align: center;
+    }
+  
+    .match-info {
+      height: 100%;
+      margin: 0px -20px;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-around;
+    }
+  
+    .content-fixture {
+      display: block;
+      margin: 0px 10px;
+    }
+  
+    .fixture-container {
+      height: 100%;
+      margin: 0px 10px;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-around;
+      margin-bottom: -120px;
+    }
+  
+    footer {
+      width: 100%;
+      margin-top: 70px;
+    }
+  
+    .footer-social>ul {
+      margin: 0px;
+    }
+  }
+  
+  /* Mobile */
+  @media only screen and (max-width: 688px) {
+    .banner-container {
+      width: 20%;
+      display: block;
+      margin: 0px -10px;
+    }
+  
+    .header {
+      margin-left: 150px;
+    }
+  
+    .banner-img {
+      padding-top: 50px;
+    }
+  
+    header {
+      margin: 0px -110px;
+      padding: 0px 100px;
+      width: 100%;
+    }
+  
+    nav>ul {
+      height: 100%;
+      background-color: #FFFFFF;
+      display: block;
+      padding: 10px 10px;
+      justify-content: space-evenly;
+      margin: 20px 120px;
+      margin-bottom: -20px;
+    }
+  
+    nav>ul>li {
+      margin: 0px -60px;
+      margin-bottom: 20px;
+    }
+  
+    .nav-btn {
+      width: 200px;
+      margin: 10px;
+      margin-left: 30px;
+      border: 1px solid;
+      text-align: center;
+    }
+  
+    .content {
+      display: block;
+      margin: 0px -10px;
+    }
+  
+    .match-info {
+      height: 100%;
+      margin: 0px 10px;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: space-around;
+    }
+  
+    .match {
+      margin-left: 20px;
+    }
+  
+    .match-fixture {
+      margin-left: 20px;
+    }
+  
+    .content-fixture {
+      display: block;
+      margin: 0px -10px;
+    }
+  
+    .fixture-container {
+      height: 100%;
+      margin: 0px 10px;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: space-around;
+      margin-bottom: -70px;
+    }
+  
+    footer {
+      width: 100%;
+      margin-top: 50px;
+    }
+  
+    .footer-menu ul {
+      display: inline;
+      justify-content: space-around;
+    }
+  
+    .footer-social>ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 1px 10px;
+      margin: 0px 10px;
     }
   }
